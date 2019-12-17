@@ -17,7 +17,7 @@
 
 	<hr>
 
-	<div id="target" onmouseup="reaction()"></div>
+	<div id="target" onclick="onclickAction()" onmouseover="onmouseoverAction()" onmouseout="onmouseoutAction()" onmousedown="onmousedownAction()" onmouseup="onmouseupAction()"></div>
 
 	<hr>
 
@@ -30,10 +30,30 @@
 	</ul>
 
 
+	<div id="kekka"></div>
+
+
 	<script>
-		function reaction() {
-			alert( 'ALOHA!' );
+		function onclickAction(){
+			document.getElementById('kekka').innerHTML = 'クリックされました！';
 		}
+		
+		function onmouseoverAction(){
+			document.getElementById('kekka').innerHTML = 'マウスオーバー！';
+		}
+
+		function onmouseoutAction(){
+			document.getElementById('kekka').innerHTML = 'マウスが範囲外に出ました！';
+		}
+
+		function onmousedownAction(){
+			document.getElementById('kekka').innerHTML = 'マウスボタンが押下されました！';
+		}
+
+		function onmouseupAction(){
+			document.getElementById('kekka').innerHTML = 'マウスボタンが離されました！';
+		}
+
 	</script>
 
 </body>
