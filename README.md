@@ -1,2 +1,5 @@
 # itl_js_samples
-sample code for javascript lessons
+ITライセンス科「JavaScript」サンプルコードのためのリポジトリ. 20191217. yt.
+
+トピックごとに branch を作成する.
+
