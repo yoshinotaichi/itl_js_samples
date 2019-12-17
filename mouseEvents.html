@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample: js_mouseEvents</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#target {
+			width: 300px;
+			height: 200px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<h1>sample: js_mouseEvents</h1>
+	マウス操作によるイベントのテスト.
+
+	<hr>
+
+	<div id="target" onmouseup="reaction()"></div>
+
+	<hr>
+
+	<ul>
+		<li>onclick</li>
+		<li>onmouseover</li>
+		<li>onmouseout</li>
+		<li>onmousedown</li>
+		<li>onmouseup</li>
+	</ul>
+
+
+	<script>
+		function reaction() {
+			alert( 'ALOHA!' );
+		}
+	</script>
+
+</body>
+</html>
