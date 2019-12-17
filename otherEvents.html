@@ -11,9 +11,17 @@
 	<hr>
 
 	<!-- <button onfocus="onfocusAction()">BUTTON</button> -->
-	<input type="text" name="tmp" onfocus="onfocusAction()">
+	<input type="text" name="tmp" onfocus="onfocusAction()" onchange="onchangeAction()">
 
 	<div id="kekka">結果を表示するところ</div>
+
+	<hr>
+
+	<ul>
+		<li>onload</li>
+		<li>onfocus</li>
+		<li>onchange</li>
+	</ul>
 
 
 	<script type="text/javascript">
@@ -22,8 +30,11 @@
 		}
 
 		function onfocusAction() {
-			// document.write('onfocus!');
 			document.getElementById('kekka').innerHTML = 'onfocus!';
+		}
+
+		function onchangeAction() {
+			document.getElementById('kekka').innerHTML = '入力欄が変更されました'
 		}
 	</script>
 
