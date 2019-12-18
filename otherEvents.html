@@ -10,12 +10,7 @@
 
 	<hr>
 
-	<!-- <button onfocus="onfocusAction()">BUTTON</button> -->
-	<input type="text" name="tmp" onfocus="onfocusAction()" onchange="onchangeAction()" id="namae">
-
-	<div id="kekka">結果を表示するところ</div>
-
-	<hr>
+	<input type="text" id="input" onfocus="onfocusAction()" onchange="onchangeAction()">
 
 	<ul>
 		<li>onload</li>
@@ -23,18 +18,28 @@
 		<li>onchange</li>
 	</ul>
 
+	<div id="kekka">結果のメッセージを出力するところ</div>
+
 
 	<script type="text/javascript">
-		function onloadAction() {
-			document.getElementById('kekka').innerHTML = 'ページ全体がロードされました.';
+		function onloadAction(){
+			// #kekka の div を取得して、メッセージを書き込む
+			const kekka = document.getElementById('kekka');
+			kekka.innerHTML = 'ページがロードされました.';
 		}
-
 		function onfocusAction() {
-			document.getElementById('kekka').innerHTML = 'onfocus!';
+			// #kekka の div を取得して、メッセージを書き込む
+			const kekka = document.getElementById('kekka');
+			kekka.innerHTML = '入力欄にフォーカス！';
 		}
 
-		function onchangeAction() {
-			document.getElementById('kekka').innerHTML = '入力欄が変更されました: ' + document.getElementById('namae').value;
+		function onchangeAction(){
+			// #kekka の div を取得して、メッセージを書き込む
+			const kekka = document.getElementById('kekka');
+
+			const inputData = document.getElementById('input').value;
+
+			kekka.innerHTML = '入力欄の内容が変更されました: ' + inputData;
 		}
 	</script>
 

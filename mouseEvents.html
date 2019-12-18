@@ -33,27 +33,36 @@
 	<div id="kekka"></div>
 
 
-	<script>
-		function onclickAction(){
-			document.getElementById('kekka').innerHTML = 'クリックされました！';
+	<script type="text/javascript">
+		function onclickAction() {
+			// kekka divに、メッセージを書き込む
+			const kekkaDiv = document.getElementById('kekka');
+			kekkaDiv.innerHTML = "クリックされました！";
 		}
-		
+
 		function onmouseoverAction(){
-			document.getElementById('kekka').innerHTML = 'マウスオーバー！';
+			// kekka divに、メッセージを書き込む
+			const kekkaDiv = document.getElementById('kekka');
+			kekkaDiv.innerHTML = "マウスがDIVの範囲に重なりました.";
 		}
 
 		function onmouseoutAction(){
-			document.getElementById('kekka').innerHTML = 'マウスが範囲外に出ました！';
+			// kekka divに、メッセージを書き込む
+			const kekkaDiv = document.getElementById('kekka');
+			kekkaDiv.innerHTML = "マウスがDIVの範囲から出ました.";
 		}
 
 		function onmousedownAction(){
-			document.getElementById('kekka').innerHTML = 'マウスボタンが押下されました！';
+			// kekka divに、メッセージを書き込む
+			const kekkaDiv = document.getElementById('kekka');
+			kekkaDiv.innerHTML = "マウスのボタンが押されました！";
 		}
 
 		function onmouseupAction(){
-			document.getElementById('kekka').innerHTML = 'マウスボタンが離されました！';
+			// kekka divに、メッセージを書き込む
+			const kekkaDiv = document.getElementById('kekka');
+			kekkaDiv.innerHTML = "マウスのボタンが離されました！";
 		}
-
 	</script>
 
 </body>
