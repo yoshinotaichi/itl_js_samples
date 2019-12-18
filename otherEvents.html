@@ -11,7 +11,7 @@
 	<hr>
 
 	<!-- <button onfocus="onfocusAction()">BUTTON</button> -->
-	<input type="text" name="tmp" onfocus="onfocusAction()" onchange="onchangeAction()">
+	<input type="text" name="tmp" onfocus="onfocusAction()" onchange="onchangeAction()" id="namae">
 
 	<div id="kekka">結果を表示するところ</div>
 
@@ -34,7 +34,7 @@
 		}
 
 		function onchangeAction() {
-			document.getElementById('kekka').innerHTML = '入力欄が変更されました'
+			document.getElementById('kekka').innerHTML = '入力欄が変更されました: ' + document.getElementById('namae').value;
 		}
 	</script>
 
