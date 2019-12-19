@@ -10,18 +10,19 @@
 
 	<hr>
 
-	<p id="pTag" onclick="pTagAction()">
-		ある日、森の中でくまさんに出会いました。
+	<p onclick="pTagAction()" id="pTag">
+		ある日森の中でくまさんに会いました。
 		<br>
 		（このパラグラフをクリックしてください）
 	</p>
 
 
-
 	<script type="text/javascript">
 		function pTagAction() {
+			// p要素を捕まえる
 			const ptag = document.getElementById('pTag');
-			ptag.innerHTML = 'ALOHA KAKAHIAKA!';
+
+			// p要素のcssを操作する
 			ptag.style.color = 'salmon';
 			ptag.style.textAlign = 'center';
 			ptag.style.backgroundColor = 'cyan';
@@ -30,5 +31,6 @@
 			ptag.style.width = '400px';
 		}
 	</script>
+
 </body>
 </html>
