@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample: js_function</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>sample: js_function</h1>
+	javascriptの関数をつくる.
+
+	<hr>
+
+	<h2>arguments（引数）</h2>
+
+	<button id="btnF_a" onclick="showMessage('ALOHA', 'Momotaro')">関数を実行する</button>
+
+	<dir id="kekka_a">結果を書き込むところ</dir>
+
+
+	<hr>
+
+
+	<h2>return value（戻り値）</h2>
+
+	<button id="btnF_r" onclick="calcDays(5)">関数を実行する</button>
+
+	<dir id="kekka_r">結果を書き込むところ</dir>
+
+
+
+	<script type="text/javascript">
+		function showMessage( hello, target ){
+			// div要素を取得する
+			const kekka = document.getElementById('kekka_a');
+
+			// メッセージをつくる
+			const msg = hello + ", " + target + "!";
+
+			// メッセージを kekka に書き込む
+			kekka.innerHTML = msg;
+		}
+	</script>
+
+</body>
+</html>
