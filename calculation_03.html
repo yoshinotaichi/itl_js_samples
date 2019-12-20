@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample: js_calc</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>sample: js_calc</h1>
+
+	<hr>
+
+	<h2>代入演算子</h2>
+	<p>計算結果を元の変数に代入する</p>
+
+	<input type="number" id="aData1" value="5">
+	（元のデータ）
+	<br>
+	<input type="number" id="aData2" value="2">
+	（ともう１つのデータ）
+	<br>
+	<input type="number" id="aKekka" value="0">
+	<br>
+	<button id="btnAssign">代入演算を実行！</button>
+
+
+	<script type="text/javascript">
+		// "btnAssign"ボタンをクリックしたら、代入演算を実行する
+		document.getElementById('btnAssign').onclick = function(){
+			let data1 = parseInt( document.getElementById('aData1').value );
+			const data2 = parseInt( document.getElementById('aData2').value );
+			const kekka = document.getElementById('aKekka');
+
+			data1 += data2;
+			kekka.value = data1;
+		}
+	</script>
+
+</body>
+</html>

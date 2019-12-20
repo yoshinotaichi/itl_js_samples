@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample: js_calc</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>sample: js_calc</h1>
+	arithmetic operations: 計算に関する演算子を使う.
+
+	<hr>
+
+	<h2>四則演算と剰余（あまり）の計算</h2>
+	<p>
+		(+, -, *, /, %)
+	</p>
+
+	<input type="number" id="data1" value="37">
+	<br>
+	<input type="number" id="data2" value="5">
+	<br>
+	<button id="btnCalc">計算！</button>
+
+	<br><br>
+
+	<input type="number" id="kekka" value="0">
+
+
+
+
+	<script type="text/javascript">
+		// "btnCalc"ボタンをクリックしたら計算処理を実行する
+		document.getElementById('btnCalc').onclick = function(){
+			const data1 = parseInt( document.getElementById('data1').value );
+			const data2 = parseInt( document.getElementById('data2').value );
+			const kekka = document.getElementById('kekka');
+			kekka.value = data1 + data2;
+		}
+	</script>
+
+</body>
+</html>
