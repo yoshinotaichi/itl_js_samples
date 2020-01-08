@@ -23,21 +23,21 @@
 
 	<script type="text/javascript">
 		// JSON形式のデータをつくる
-		const data = {
-			teihen:31,
-			takasa:19
+		const triangle = {
+			teihen: 31,
+			takasa: 19
 		}
 
 		// データを使って計算する
-		const result = data.teihen * data.takasa / 2;
+		const menseki = triangle.teihen * triangle.takasa / 2;
 
 		// 計算結果を div に書き込む
-		const kekka = document.getElementById('kekka');
-		kekka.innerHTML = result;
+		const kekka = document.getElementById( 'kekka' );
+		kekka.innerHTML = '面積: ' + menseki;
 
-		// JSONを文字列にして、console に出力する
-		const str = JSON.stringify( data );
-		console.log( str );
+		// JSONを文字列にして出力する
+		const str = JSON.stringify( triangle );
+		document.write( str );
 
 	</script>
 
